@@ -81,28 +81,108 @@ Step 10: Once MySWL is installed launch the program and continue with a standard
 
 ![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/52b55e0c-1cd3-46a9-b1bd-c7d6a985a93b)
 
-Step 11: Open the Internet Information Services Management console on the computer as an Admin
+Step 11: Open the Internet Information Services Management console on the computer as an Admin.
 
 ![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/b65d5a62-8d28-43f1-a90f-81be20a335d0)
 
-Step 12: Inside the IIS open the PHP Manager system
+Step 12: Inside the IIS open the PHP Manager system.
 
 ![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/63efb7b9-b6e9-4c74-b533-2a27c03c3f5a)
 
-Step 13: Register PHP Version using the application file found inside the PHP folder on the C: Drive
+Step 13: Register PHP Version using the application file found inside the PHP folder on the C: Drive.
 
 ![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/87f918df-67f6-485b-a5fd-58c44632b5eb)
 
 ![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/215be707-707f-45a9-b318-4ed381e4bff0)
 
-Step 14: Back out to tha main page on IIS and restart the server
+Step 14: Back out to tha main page on IIS and restart the server.
 
 ![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/a14118c8-11e7-49d0-8335-99f5d000d345)
 
+Install OSTicket on the computer.
+
+Step 15: Inside the OSTicket donwload folder drag the Upload folder to the wwwroot folder inside the intetpub foledr on the C: drive.
+
+Step 16: Rename Upload folder to "OSTicket".
+
+Step 17: Inside IIS on the dropdown menu on the left open the Open the Sites Tab  --> Default Web Site --> OSTicket .
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/669c20af-08cf-4413-b5c8-d7c62284dea8)
+
+Step 18: Click Browse *80 (http)
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/bf2b33e3-48f4-4df7-8192-294239168e4a)
+
+--Keep this on the side--
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/3b38fca0-d5ce-44f9-94be-81bef0181018)
 
 
 
+We now need to turn on some extensions to help OSTicket.
 
+Step 19: On IIS in the OSTicket page go to "PHP Manager" and then "enable or disable extenstions".
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/91a628f4-2382-418f-831a-87d197e6ce51)
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/8015384d-5a83-4af2-a47a-28f3c9a223a1)
+
+Step 20: Inside enable all of these extensions: --php_imap.dll --  php_intl.dll -- php_opcache.dll
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/304facc8-867f-4191-a8e1-6524b3a199c9)
+
+
+Step 21: Inside the previous wwwroot folder in file explorer open the OSTicket folder --> include, rename the -- ost-sampleconfig.php -- to -- ost-config.php --
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/c06987ef-af7d-48dd-a95a-88f5432b0975)
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/65772fea-35c1-488c-aa81-a988c959537b)
+
+Step 22: Open the Properties on the renamed file go to security --> Adavnced and Disable Ingeritance. Remove all Permissions when the pop-up appears.
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/b711d7c7-c654-40be-a511-5edb6ea0dab1)
+
+Step 23: Once done, Click add permission --> select a principal --> Type everyone in the textbox and clich Check Names --> Ok. Then check off Full Control then Ok.
+
+We can now go back to the Browser with OSTicket and click Continue.
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/0bc953f1-52ad-401e-ab9a-218a430fbe7a)
+
+Step 24: Fill out all the information needed in the System Settings and Admin User
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/1a048544-bce0-40ef-8444-0380d7f5fe25)
+
+Step 25: On the side, Install HeidiSQL and open the Application.
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/e8908349-7a0e-46e9-a3c7-43d02d554a4f)
+
+Step 26: Inside HeidiSQL Start a new Session.
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/fe975b30-049e-4d04-89d1-380c03ed84a6)
+
+Step 27: Using the Login Info from MySQL type that in the respective boxes and Open.
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/f576f710-cff6-405a-bdb4-f158237043cb)
+
+Step 28: Right Click on Unamed and create a new Databade named OSTicket
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/3c31f9d8-d7a7-493e-90d5-0061556c7fb0)
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/f8fb87dd-ba97-498c-b818-955d1c1384a5)
+
+Step 29: Back on the browser with OSTicket Type all the info needed in the Database Settings using the info we made in MySQL and HeidiSQL.
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/11ffedf1-6297-4345-90c9-4c58583dd199)
+
+Step 30: Click Install Now.
+
+OSTicket is Fully Installed and we are ready to Clean up anything left over.
+
+Clean Up: Go to the C: Drive --> inetpub --> wwwroots --> osTicket  --> setup and delete the folder
+
+Clean Up: C: Drive --> inetpub --> wwwroots --> osTicket --> include --> ost.config.php Set the file to read only in the permissions
+
+You can now go to http://localhost/osTicket/scp/login.php to login.
 
 
 
@@ -110,18 +190,3 @@ Step 14: Back out to tha main page on IIS and restart the server
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
