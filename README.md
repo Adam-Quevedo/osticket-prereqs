@@ -30,6 +30,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 
+Before we do anything, we need to remote desktop into the virtual machine using the Ip address.
+
+![image](https://github.com/Adam-Quevedo/osticket-prereqs/assets/151606017/c3b95c4e-f822-49ce-bdde-e8914d891ea8)
+
+
 First we need to Enable "CGI" and "Commonn Web Features to allow support for CGI executables and Web Server Content inside the Virtual Machine.
   
   Step 1: Open the Control Pannel and search for Windows Features
