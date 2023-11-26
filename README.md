@@ -22,7 +22,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Internet Connection
 - Azure Subscription
 - 2 Virtual Machinces
-- Item 5
 
 <h2>Installation Steps</h2>
 
